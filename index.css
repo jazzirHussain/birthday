@@ -1,0 +1,368 @@
+@font-face {
+  font-family: font-bold;
+  src: url('./font/Kalam-Bold.ttf');
+}
+@font-face {
+  font-family: font;
+  src: url('./font/Kalam-Regular.ttf');
+}
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background-color: #fdbf00;
+  font-family: font,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.wrapper {
+	width: 320px;
+	height: 470px;
+	/* position: absolute; */
+	/* margin: auto; */
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.container {
+	background-color: #ffffff;
+	position: relative;
+	height: 360px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 30px 40px rgb(68, 52, 2, 0.3);
+	box-shadow: 0 30px 40px rgb(68, 52, 2, 0.3);
+}
+a {
+	display: block;
+	width: 100%;
+	background-color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	padding: 12px 0;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	text-decoration: none;
+	color: #000000;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 30px 40px rgb(68, 52, 2, 0.3);
+	box-shadow: 0 30px 40px rgb(68, 52, 2, 0.3);
+}
+.cake {
+	width: 100%;
+	position: absolute;
+	bottom: 50px;
+}
+.bottom-layer,
+.top-layer,
+.middle-layer {
+	height: 80px;
+	width: 240px;
+	position: relative;
+	margin: auto;
+	background-repeat: repeat;
+	background-size: 100% 100%, 60px 100px;
+	background-position: 28px 0;
+	background-image: -o-linear-gradient(
+			transparent 50px,
+			#fedbab 50px,
+			#fedbab 60px,
+			transparent 60px
+		),
+		-o-radial-gradient(30px 5px, circle, #994c10 30px, #fcbf29 31px);
+	background-image: linear-gradient(
+			transparent 50px,
+			#fedbab 50px,
+			#fedbab 60px,
+			transparent 60px
+		),
+		radial-gradient(circle at 30px 5px, #994c10 30px, #fcbf29 31px);
+	border-radius: 10px 10px 0 0;
+}
+.middle-layer {
+	-webkit-transform: scale(0.85);
+	-ms-transform: scale(0.85);
+	transform: scale(0.85);
+	top: 72px;
+	-webkit-animation: rise-1 2s forwards;
+	animation: rise-1 2s forwards;
+}
+@-webkit-keyframes rise-1 {
+	100% {
+		top: 7px;
+	}
+}
+@keyframes rise-1 {
+	100% {
+		top: 7px;
+	}
+}
+.top-layer {
+	-webkit-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transform: scale(0.7);
+	top: 144px;
+	-webkit-animation: rise-2 2s 2s forwards;
+	animation: rise-2 2s 2s forwards;
+}
+@-webkit-keyframes rise-2 {
+	100% {
+		top: 26px;
+	}
+}
+@keyframes rise-2 {
+	100% {
+		top: 26px;
+	}
+}
+.candle {
+	background: -o-repeating-linear-gradient(
+		45deg,
+		#fd3018 0,
+		#fd3018 5px,
+		#ffa89e 5px,
+		#ffa89e 10px
+	);
+	background: repeating-linear-gradient(
+		45deg,
+		#fd3018 0,
+		#fd3018 5px,
+		#ffa89e 5px,
+		#ffa89e 10px
+	);
+	height: 45px;
+	width: 15px;
+	position: absolute;
+	margin: auto;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	-webkit-animation: rise-3 1s 4s forwards;
+	animation: rise-3 1s 4s forwards;
+}
+@-webkit-keyframes rise-3 {
+	100% {
+		bottom: 202px;
+	}
+}
+@keyframes rise-3 {
+	100% {
+		bottom: 202px;
+	}
+}
+.candle:after {
+	content: "";
+	position: absolute;
+	height: 16px;
+	width: 16px;
+	background-color: #ffb62d;
+	border-radius: 0 50% 50% 50%;
+	-webkit-transform: scale(0) rotate(45deg);
+	-ms-transform: scale(0) rotate(45deg);
+	transform: scale(0) rotate(45deg);
+	bottom: 50px;
+	left: -0.5px;
+	-webkit-animation: flame 1.5s 5s forwards;
+	animation: flame 1.5s 5s forwards;
+}
+@-webkit-keyframes flame {
+	100% {
+		-webkit-transform: scale(1) rotate(45deg);
+		transform: scale(1) rotate(45deg);
+	}
+}
+@keyframes flame {
+	100% {
+		-webkit-transform: scale(1) rotate(45deg);
+		transform: scale(1) rotate(45deg);
+	}
+}
+.svg-wrapper {
+  height: 100vh;
+}
+
+.svg-wrapper svg {
+  display:			block;
+  width:				auto;
+  height:				100%;
+  margin:				auto;
+}
+
+@media only screen and (max-width: 47.98em) {
+  .svg-wrapper svg {
+    max-width: 100%;
+  }
+}
+
+g.surprise-gift {
+  filter: url('#product-dropshadow');
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FF9F43;
+  z-index: -1;
+  opacity: 0;
+}
+
+.bg.gift-open {
+  animation: fadeOut 3.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.head{
+  gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.head h1{
+  font-family: font-bold;
+  font-size: 80px;
+  color: #393939;
+  text-align: center;
+}
+canvas{
+  width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.hero{
+  display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+        justify-content: space-around;
+}
+@keyframes dahyunphoto {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-2px);
+  }
+
+  75% {
+    transform: translateX(2px);
+  }
+}
+figure {
+  width: 336px;
+  height: 403px;
+  position: relative;
+  background-color: #eaeaea;
+  padding: 19px 19px 85px 19px;
+  border-radius: 1.1%;
+  /* animation: dahyunphoto 0.77s infinite; */
+}
+figure img {
+  width: 100%;
+}
+figure:before {
+  top: 3px;
+  left: -55px;
+}
+.polaroid{
+  display: flex;
+  gap: 19px;
+}
+.polaroid>figure:first-of-type{
+  transform: rotate(350deg);
+  right: -30px;
+}
+.polaroid>figure:last-of-type{
+  transform: rotate(10deg);
+  left: -30px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Lobster&display=swap');
+
+/* body {
+  font-family: 'Homemade Apple';
+  font-size: 2rem;
+  background: beige;
+} */
+
+.letter .container {
+  /*
+  background-image: url( "https://github.com/3in0/media/raw/master/files/paper.png" );
+  background-size: 100% 100%;
+  */
+  
+  background: white;
+  width: 60%;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  padding-top: 2rem;
+  box-shadow: 5px 5px 10px #aaa;
+  height: auto;
+}
+
+.letter .line {
+  border-bottom: 1px solid #03a9f4;
+  height: 2rem;
+  position: relative;
+  padding-left: 0.5rem;
+
+}
+
+.letter .line span {
+  
+  position: absolute;
+  bottom: -24px;
+  color: #5452ad;
+  opacity: 0.9;
+  
+}
+
+.letter .right span {
+  right: 0.5rem;
+}
+
+.letter .indent span {
+  left: 15ch;
+}
+
+.letter .double-indent span {
+  left: 25ch;
+}
+.gallery img{
+	width: 20%;
+	border-radius: 5px;
+	transition: .5s;
+}
+.gallery img:hover{
+	transform: scale(1.1);
+}
+.gallery{
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 70px;
+}
+.video{
+	display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.video video{
+	width: 25%;
+}
