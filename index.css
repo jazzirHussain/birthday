@@ -366,3 +366,8 @@ figure:before {
 .video video{
 	width: 25%;
 }
+.footer{
+	display: flex;
+    justify-content: center;
+    padding: 5em;
+}
